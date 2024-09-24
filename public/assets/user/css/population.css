@@ -1,0 +1,125 @@
+
+#population {
+	--main-color: #fff;
+	/*     background-image: url(../images/population_bg.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; */
+	background-color: rgba(0,0,0, .1);
+	position: relative;
+}
+
+#population .section-heading {
+	color: var(--main-color);
+} 
+
+#population form {
+	font-size: 0;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+#population .choose_age {
+	margin: 1em 0 2em;
+	letter-spacing: 0.025em;
+	color: var(--main-color);
+	padding: 20px 5px 5px 0;
+	font-weight: 600;
+	font-size: 14px;
+	display: inline-block;
+	width: 30%;
+}
+
+#population .choose_age select {
+	outline: none;
+	border: none;
+	transition: all 1s ease;
+	padding: 0 5px;
+	height: 30px;
+	border-bottom: solid thin var(--main-color);
+}
+
+
+.population_input,
+.population_btn {
+	height: 30px;
+	margin: 1em 0 2em;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	color: var(--main-color);
+	border: none;
+	transition: all 1s ease;
+	padding: 0 5px;
+	font-weight: 600;
+	font-size: 14px;
+	display: inline-block;
+	outline: none;
+	background-color: transparent;
+}
+
+.population_input#searchName {
+	width: 25%;
+	border-bottom: solid thin var(--main-color);
+	margin-right: 5%;
+}
+
+.population_input#searchYear {
+	width: 10%;
+	border-bottom: solid thin var(--main-color);
+	margin-right: 5%;
+}
+
+.population_btn {
+	width: 5.3%;
+	-webkit-appearance: button;
+	cursor: pointer;
+	height: 45px;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.population_btn:focus,
+.population_input:focus {
+	outline: none; 
+}
+
+.population_btn:hover {
+	background-color: #213047;
+	color: #fff;
+	border-color: #213047;
+}
+
+#container_populaChart {
+	background-color: transparent;
+}
+
+#population_Chart .echarts-dataview p {
+	color: #213047;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+}
+
+#population_Chart .echarts-dataview textarea {
+	border: none;	
+	border-bottom: 1px solid #eee;
+
+}
+
+#population_Chart .echarts-dataview button {
+	box-shadow:  none;
+	color:  #213047;
+	outline: none;
+	border: 1px solid #213047;
+	background:  #fff;
+	outline: none;
+	font-weight:  bold;
+	transition: all 0.5s ease;
+}
+
+#population_Chart .echarts-dataview button:hover {
+	border-color: #ffb400;
+	color: #fff;
+	background-color: #ffb400;
+}

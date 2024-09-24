@@ -1,0 +1,168 @@
+.multi .content-multi-x,
+.multi .content-multi-y {
+	display: inline-block;
+	height: 100%;
+	padding: 10px;
+	vertical-align: top;
+}
+
+.multi .content-multi-x {
+	width: 15%;
+}
+
+.multi .content-multi-y {
+	width: 85%
+}
+
+.multi .content-multi-y .add {
+	position:  absolute;
+	top: -1px;
+	right: 10px;
+	z-index: 100;
+}
+.multi .content-multi-y .add .minus,
+.multi .content-multi-y .add .plus {
+	padding-right: 3px;
+}
+
+.multi .data_x,
+.multi .data_y {
+	box-shadow: 0 0 10px #ccc;
+	font-size: 0;
+	/* text-align: center; */
+	vertical-align: top;
+	position: relative;
+	background: #fff;
+}
+
+.multi .data_x .header_data,
+.multi .data_y .header_data {
+	background-color: #213047;
+	color: #fff;
+	padding: 8px 0;
+	margin-bottom: 10px;
+	font-size: 16px;
+	text-align:  center;
+}
+
+.multi .content-multi-y .group_y {
+	font-size: 0;
+	width: 50%;
+	text-align:  center;
+	display:  inline-block;
+	position:  relative;
+}
+
+.multi .content-multi-y .group_y .color_data {
+	padding: 5px 0
+}
+
+.multi .content-multi-y .group_y .color_input {
+	width: 100%;
+	padding: 0;
+	background: #fff;
+	/* position:  absolute; */
+	bottom: -100px;
+	left: 0;
+}
+
+
+
+.multi .content-multi-x .sub_header {
+	margin-top: 20px;
+}
+.multi .sub_header{
+	font-size: 16px;
+	border-bottom: 1px solid #ccc;
+	margin: 10px 15px;
+	text-align: center;
+}
+
+.multi .setting {
+	width: 100%;
+	padding: 10px;
+	/* background: #fff; */
+}
+
+.multi .setting_data {
+	padding: 20px;
+	background: #fff;
+	font-size: 0;
+}
+
+.multi .setting_data .content_input {
+	font-size: 0px;
+	display:  inline-block;
+	//border-bottom: 1px	solid #eee;
+	padding: 10px;
+	width: 25%;
+}
+
+.multi .setting_data .content_input:nth-child(4n) {
+	width: 20%;
+}
+
+.multi .setting_data .content_input:nth-child(1) label,
+.multi .setting_data .content_input:nth-child(5) label {
+	width: 40%;
+}
+
+.multi .setting_data .content_input:nth-child(1) select,
+.multi .setting_data .content_input:nth-child(5) select {
+	width: 60%;
+}
+
+.multi .setting_data .content_input:nth-child(2),
+.multi .setting_data .content_input:nth-child(6) {
+	width: 30%;
+}
+
+.multi .setting_data .content_input:nth-child(2) label,
+.multi .setting_data .content_input:nth-child(6) label {
+	width: 60%;
+	padding-left: 10%;
+}
+
+.multi .setting_data .content_input:nth-child(2) select,
+.multi .setting_data .content_input:nth-child(6) select {
+	width: 30%;
+} 
+
+.multi .setting_data .content_input:nth-child(3) label,
+.multi .setting_data .content_input:nth-child(7) label {
+	width: 60%
+}
+
+.multi .setting_data .content_input:nth-child(3) select,
+.multi .setting_data .content_input:nth-child(7) select {
+	width: 30%
+}
+
+.multi .setting_data .content_input:nth-child(4n) label,
+.multi .setting_data .content_input:nth-child(4n) select {
+	width: 50%
+}
+
+.multi .setting_data .content_input label {
+	font-size: 14px;
+}
+.multi .setting_data .content_input select {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+}
+
+.multi .setting_data .content_input .width,
+.multi .setting_data .content_input .height {
+	width: 47%;
+	display: inline-block;
+}
+
+.multi .setting .header_data {
+	background-color: #213047;
+	color: #fff;
+	padding: 8px 0;
+	/* margin-bottom: 10px; */
+	font-size: 16px;
+	text-align: center;
+}

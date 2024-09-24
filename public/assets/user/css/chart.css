@@ -1,0 +1,374 @@
+ /*=======================================
+ =            0. RESET CSS              =
+ =======================================*/
+ /* ------------------------------------------------------------------------------
+*
+*  # Chart styling
+*
+*  Charts base - container and sizing setup
+*
+*  Version: 1.0
+*  Latest update: May 25, 2015
+*
+* ---------------------------------------------------------------------------- */
+.chart-container {
+  position: relative;
+  width: 100%;
+}
+.chart-container.has-scroll {
+  overflow-x: scroll;
+  overflow-y: visible;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .chart-container {
+    overflow-x: scroll;
+    overflow-y: visible;
+    max-width: 100%;
+  }
+}
+.chart {
+  position: relative;
+  display: block;
+  width: 100%;
+  direction: ltr;
+}
+.chart.has-minimum-width {
+  min-width: 600px;
+}
+.has-fixed-height {
+  height: 480px;
+}
+.chart-pie {
+  width: 100%;
+  height: 400px;
+  min-width: 500px;
+}
+
+
+ /*title*/
+ .btn_import {
+   font-size: 0;
+   width: 80%;
+   position: relative;
+   border: 2px solid #ccc;
+   padding: 15px 0 5px 0;
+   margin: 10px auto;
+   border-radius: 5px;
+ }
+ .btn_import .example,
+ .btn_import .input-choose,
+ .btn_import .input-import {
+   display: inline-block;
+   font-size: 14px;
+ }
+
+.btn_import .example {
+  width: 45%;
+}
+
+.btn_import .input-choose {
+   width: 35%;
+ }
+ .btn_import .input-import {
+   width: 20%;
+ }
+
+ .btn_import a {
+  background-color: #ffb400;
+  margin-left: 15px;
+  color: #fff;
+  outline: none;
+  padding: 5px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border: 2px solid #ffb400;
+  transition: all 0.5s ease;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.btn_import a:hover,
+.btn_import a:focus {
+  color: #213047;
+  border-color: #213047;
+  background-color: transparent;
+}
+
+.title-chart {
+  position: relative;
+  margin: 30px 0;
+  font-size: 0;
+  width: 80%;
+  left: 10%;
+}
+
+.title-chart .title {
+  border: 0;
+  padding: 5px;
+  border-bottom: 2px solid #213047;
+  background-color: transparent;
+  color: #213047;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  outline: none;
+  z-index: 1;
+  pointer-events: auto;
+  width: 85%;
+}
+.title-chart label {
+  width: 15%;
+}
+.title-chart label,
+.title-chart .title {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.title-chart .title ~ .focus-border {
+   position: absolute;
+   bottom: 0;
+   left: 15%;
+   width: 0;
+   height: 2px;
+   background-color: #FFB400;
+   transition: 0.4s;
+}
+
+.title-chart .title:focus ~ .focus-border, 
+.has-content.title ~ .focus-border {
+   width: 85%;
+   transition: 0.4s;
+}
+
+
+/*=======================================
+ =            1. Pie chart             =
+ =======================================*/
+
+.chart-data {
+  /* background-color: rgba(0, 0, 0, .04); */
+  position: relative;
+  padding: 10px;
+}
+
+.chart-data .content_data {
+  font-size: 0;
+  /* padding: 10px; */
+  /* padding-left: 10%; */
+  /* padding-right: 10%; */
+}
+
+.chart-data .content_data .data_xy {
+  display:inline-block;
+  height: 100%;
+  padding: 10px;
+  width: 37%;
+}
+
+.chart-data .content_data .data{
+  display:inline-block;
+  font-size: 0;
+  text-align: center;
+  vertical-align: top;
+  box-shadow: 0 0 10px #ccc;
+  width: 100%;
+}
+
+.chart-data .content_data .data .x_data,
+.chart-data .content_data .data .y_data {
+  display:inline-block;
+  height: 100%;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: top;
+  width: 50%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.chart-data .content_data .color,
+.chart-data .content_data .setting {
+  display:inline-block;
+  height: 100%;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.chart-data .content_data .color{
+  width: 15%;  
+}
+.chart-data .content_data .setting{
+  width: 33%;
+}
+
+.chart-data .content_data .data .header_data,
+.chart-data .content_data .color .header_data,
+.chart-data .content_data .setting .header_data {
+ background-color: #213047;
+ color: #fff;
+ padding: 5px 0;
+ margin-bottom: 10px;
+}
+
+.chart-data .content_data .x_data,
+.chart-data .content_data .y_data {
+  background-color: #fff;
+}
+.chart-data .content_data .color_data,
+.chart-data .content_data .color_border,
+.chart-data .content_data .one_color,
+.chart-data .content_data .setting_data {
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+.chart-data .content_data .setting_data {
+  font-size: 0;
+  text-align: left;
+}
+.chart-data .content_data .setting_data .header_data {
+  font-size: 16px;
+  text-align: center;
+}
+.chart-data .content_data .setting_data label,
+.chart-data .content_data .setting_data input {
+  display: inline-block;
+  font-size: 14px;
+}
+.chart-data .content_data .setting_data label {
+  width: 55%;
+}
+.chart-data .content_data .setting_data input {
+  width: 40%;
+}
+.chart-data .content_data .setting_data input:focus{
+  border-bottom-color: #ffb400;
+}
+
+.chart-data .content_data .content_input {
+    padding: 10px 15px;
+    position: relative;
+    font-size: 14px;
+    height: 45px;
+}
+
+.chart-data .content_data .content_input .select,
+.chart-data .content_data .content_input input {
+  font-size: 14px;
+  outline: none;
+  border: none;
+  padding: 2.5px 5px 1px 5px;
+  border-bottom: 1px solid #ccc;
+  color: #213047;
+  font-weight: 600;
+}
+
+
+.chart-data .content_data .content_input .select {
+  width: 44%;  
+  cursor: pointer;
+}
+
+.input_data {
+  width: 100%;
+  outline: none;
+  color: #213047;
+  padding: 5px;
+  border: 0;
+  text-align: center;
+  padding: 4px;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.input_data:focus ~ .focus-border {
+  width: calc(100% - 30px);
+  transition: 0.4s;
+}
+
+.input_data ~ .focus-border {
+  position: absolute;
+  bottom: 11px;
+  left: 15px;
+  width: 0;
+  height: 1px;
+  background-color: #FFB400;
+  transition: 0.4s;
+}
+
+.chart-data .content_data .btn_drawchart{
+  /* margin-bottom: 30px; */
+}
+
+.chart-data .content_data .add {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.chart-data .content_data .add .plus,
+.chart-data .content_data .add .minus {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.chart-data .content_data .add .plus i,
+.chart-data .content_data .add .minus i {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 50%;
+  line-height: 32.5px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 6px 16.6px 1.4px rgba(123, 123, 123, 0.2);
+  -webkit-box-shadow: 0px 6px 16.6px 1.4px rgba(123, 123, 123, 0.2);
+  cursor: pointer;
+}
+
+.chart-data .content_data .add .plus i {
+  color: green;
+}
+
+.chart-data .content_data .add .minus i {
+  color: red;
+}
+
+.chart-size {
+  background: #fff;
+  /* padding-bottom: 75px; */
+}
+
+.chart-size #myChart {
+    margin: 0 auto;
+}
+
+
+
+/*mix chart*/
+.form-mix .content_data .setting {
+  width: 30%
+}
+.form-mix .content_data .data_xy {
+  width: 55%;
+}
+
+.form-mix .content_data .data .x_data, 
+.form-mix .content_data .data .y_data {
+  width: calc(100% /3 );
+}
+
+.form-mix .content_data .color .border {
+  margin-top: 20px;
+}

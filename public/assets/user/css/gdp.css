@@ -1,0 +1,195 @@
+#gdp {
+	--main-color: #213047;	
+	position: relative;
+}
+
+#gdp .gdp-guide {
+	position: absolute;
+	left: 80px;
+	top: 130px;
+	content:  "";
+	z-index: 100;
+	color: var(--main-color);
+}
+
+#gdp .gdp-guide {
+	position: absolute;
+	left: 80px;
+	top: 130px;
+	content:  "";
+	z-index: 100;
+	color: var(--main-color);
+	padding: 5px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #ffb400;
+	border: 1px solid #ffb400;
+}
+
+#gdp .gdp-guide select {
+	background-color: #ffb400;
+	padding: 2px 15px;
+	margin-left: 5px;
+	border: none;
+	border-bottom: 1px solid var(--main-color);
+	outline: none;
+	cursor:  pointer;
+	height: 35px;
+	background-image: linear-gradient(45deg, transparent 50%, #213047 50%), linear-gradient(135deg, #213047 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
+	background-position: calc(100% - 5px) center, calc(100% - 0px) center, 100% center;
+	background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+}
+
+#gdp .gdp-guide select option {
+	height: 50px;
+	outline: none;
+}
+
+#gdp .gdp_input {
+	color: var(--main-color);
+}
+
+#gdp .gdp_btn {
+	color: var(--main-color);
+}
+
+#container_gdpChart {
+	border-top: 1px solid #ffb400;
+	border-bottom: 1px solid #ffb400;
+	/* margin-top: 30px; */
+}
+
+
+#gdp .gdp_input,
+#gdp .gdp_btn {
+	height: 45px;
+	margin: 1em 0 2em;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	color: var(--main-color);
+	border: none;
+	transition: all 1s ease;
+	padding: 5px;
+	font-weight: 600;
+	font-size: 14px;
+	display: inline-block;
+	outline: none;
+	background-color: transparent;
+}
+
+#gdp .gdp_input#gdp_name {
+	width: 80%;
+	border-bottom: solid thin var(--main-color);
+	margin-right: 2%;
+}
+
+#gdp .gdp_btn {
+	width: 17%;
+	-webkit-appearance: button;
+	cursor: pointer;
+	text-align: center;
+	height: 45px;
+	color: var(--main-color);
+	border: 2px solid var(--main-color);
+}
+
+#gdp .gdp_btn:focus,
+#gdp .gdp_input:focus {
+	outline: none; 
+}
+
+#gdp .gdp_btn:hover {
+	background-color: var(--main-color);
+	color: #fff;
+}
+
+#gdp_Chart h4 {
+	text-align:center;
+	color: var(--main-color) !important;
+}
+
+#gdp_Chart div:nth-child(3) {
+	z-index: 999;
+	
+}
+
+#gdp_Chart div:nth-child(3) div {
+	overflow: hidden !important;
+	padding: 5px 10px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #ffb400;
+	border: 1px solid #ffb400;
+}
+
+#gdp .gdp_input {
+	color: var(--main-color);
+}
+
+#gdp .gdp_btn {
+	color: var(--main-color);
+}
+
+#container_gdpChart {
+	border-top: 1px solid #ffb400;
+	border-bottom: 1px solid #ffb400;
+	/* margin-top: 30px; */
+}
+
+
+#gdp .gdp_input,
+#gdp .gdp_btn {
+	height: 45px;
+	margin: 1em 0 2em;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	color: var(--main-color);
+	border: none;
+	transition: all 1s ease;
+	padding: 5px;
+	font-weight: 600;
+	font-size: 14px;
+	display: inline-block;
+	outline: none;
+	background-color: transparent;
+}
+
+#gdp .gdp_input#gdp_name {
+	width: 80%;
+	border-bottom: solid thin var(--main-color);
+	margin-right: 2%;
+}
+
+#gdp .gdp_btn {
+	width: 17%;
+	-webkit-appearance: button;
+	cursor: pointer;
+	text-align: center;
+	height: 45px;
+	color: var(--main-color);
+	border: 2px solid var(--main-color);
+}
+
+#gdp .gdp_btn:focus,
+#gdp .gdp_input:focus {
+	outline: none; 
+}
+
+#gdp .gdp_btn:hover {
+	background-color: var(--main-color);
+	color: #fff;
+}
+
+#gdp_Chart h4 {
+	text-align:center;
+	color: var(--main-color) !important;
+}
+
+#gdp_Chart div:nth-child(3) {
+	z-index: 999;
+	
+}
+
+#gdp_Chart div:nth-child(3) div {
+	overflow: hidden !important;
+}
